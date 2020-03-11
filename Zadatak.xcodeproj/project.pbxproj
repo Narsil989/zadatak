@@ -22,6 +22,21 @@
 		D62AA3EF2416AC580062DC13 /* SceneCoordinatorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA3EE2416AC580062DC13 /* SceneCoordinatorType.swift */; };
 		D62AA3F12416AF110062DC13 /* SceneCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA3F02416AF110062DC13 /* SceneCoordinator.swift */; };
 		D62AA3F42416B46E0062DC13 /* InstanceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA3F32416B46E0062DC13 /* InstanceRegistration.swift */; };
+		D62AA3F7241942C70062DC13 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA3F6241942C70062DC13 /* NetworkService.swift */; };
+		D62AA3F9241942DA0062DC13 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA3F8241942DA0062DC13 /* Network.swift */; };
+		D62AA3FF2419431E0062DC13 /* ApiEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA3FE2419431E0062DC13 /* ApiEndpoint.swift */; };
+		D62AA402241943A40062DC13 /* ApiConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA401241943A40062DC13 /* ApiConfig.swift */; };
+		D62AA40424194B600062DC13 /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA40324194B600062DC13 /* ResponseStatus.swift */; };
+		D62AA4072419502C0062DC13 /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA4062419502C0062DC13 /* PostService.swift */; };
+		D62AA40B2419526C0062DC13 /* PostListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA4092419526C0062DC13 /* PostListViewController.swift */; };
+		D62AA40C2419526C0062DC13 /* PostListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62AA40A2419526C0062DC13 /* PostListViewController.xib */; };
+		D62AA40E241952910062DC13 /* PostListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA40D241952910062DC13 /* PostListVM.swift */; };
+		D62AA411241954B50062DC13 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA40F241954B50062DC13 /* PostCell.swift */; };
+		D62AA412241954B50062DC13 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62AA410241954B50062DC13 /* PostCell.xib */; };
+		D62AA414241954DA0062DC13 /* UITableViewCell+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA413241954DA0062DC13 /* UITableViewCell+Ext.swift */; };
+		D62AA416241955320062DC13 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA415241955320062DC13 /* Reusable.swift */; };
+		D62AA418241955DE0062DC13 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA417241955DE0062DC13 /* Configurable.swift */; };
+		D62AA41A24195EF70062DC13 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA41924195EF70062DC13 /* UITableView+Ext.swift */; };
 		D6B7DF0424159D9D0050D670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7DF0324159D9D0050D670 /* AppDelegate.swift */; };
 		D6B7DF0624159D9D0050D670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7DF0524159D9D0050D670 /* ViewController.swift */; };
 		D6B7DF0C24159D9D0050D670 /* Zadatak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6B7DF0A24159D9D0050D670 /* Zadatak.xcdatamodeld */; };
@@ -45,6 +60,21 @@
 		D62AA3EE2416AC580062DC13 /* SceneCoordinatorType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinatorType.swift; sourceTree = "<group>"; };
 		D62AA3F02416AF110062DC13 /* SceneCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneCoordinator.swift; sourceTree = "<group>"; };
 		D62AA3F32416B46E0062DC13 /* InstanceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstanceRegistration.swift; sourceTree = "<group>"; };
+		D62AA3F6241942C70062DC13 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		D62AA3F8241942DA0062DC13 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		D62AA3FE2419431E0062DC13 /* ApiEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEndpoint.swift; sourceTree = "<group>"; };
+		D62AA401241943A40062DC13 /* ApiConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConfig.swift; sourceTree = "<group>"; };
+		D62AA40324194B600062DC13 /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
+		D62AA4062419502C0062DC13 /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		D62AA4092419526C0062DC13 /* PostListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewController.swift; sourceTree = "<group>"; };
+		D62AA40A2419526C0062DC13 /* PostListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostListViewController.xib; sourceTree = "<group>"; };
+		D62AA40D241952910062DC13 /* PostListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListVM.swift; sourceTree = "<group>"; };
+		D62AA40F241954B50062DC13 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		D62AA410241954B50062DC13 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
+		D62AA413241954DA0062DC13 /* UITableViewCell+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Ext.swift"; sourceTree = "<group>"; };
+		D62AA415241955320062DC13 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
+		D62AA417241955DE0062DC13 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
+		D62AA41924195EF70062DC13 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
 		D6B7DF0024159D9D0050D670 /* Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zadatak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7DF0324159D9D0050D670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B7DF0524159D9D0050D670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -126,6 +156,7 @@
 		D62AA3D92416A3680062DC13 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				D62AA4082419524F0062DC13 /* Post */,
 				D62AA3E22416A8170062DC13 /* Tabbar */,
 			);
 			path = UI;
@@ -145,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				D62AA3EE2416AC580062DC13 /* SceneCoordinatorType.swift */,
+				D62AA415241955320062DC13 /* Reusable.swift */,
+				D62AA417241955DE0062DC13 /* Configurable.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -152,6 +185,8 @@
 		D62AA3EC2416AC490062DC13 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D62AA413241954DA0062DC13 /* UITableViewCell+Ext.swift */,
+				D62AA41924195EF70062DC13 /* UITableView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -169,6 +204,70 @@
 				D62AA3F32416B46E0062DC13 /* InstanceRegistration.swift */,
 			);
 			path = DI;
+			sourceTree = "<group>";
+		};
+		D62AA3F5241942B40062DC13 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				D62AA4052419501C0062DC13 /* Services */,
+				D62AA3FB241943100062DC13 /* API */,
+				D62AA3F6241942C70062DC13 /* NetworkService.swift */,
+				D62AA3F8241942DA0062DC13 /* Network.swift */,
+				D62AA40324194B600062DC13 /* ResponseStatus.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		D62AA3FB241943100062DC13 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D62AA3FC241943100062DC13 /* ResponseModels */,
+				D62AA3FD241943100062DC13 /* RequestModels */,
+				D62AA3FE2419431E0062DC13 /* ApiEndpoint.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		D62AA3FC241943100062DC13 /* ResponseModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ResponseModels;
+			sourceTree = "<group>";
+		};
+		D62AA3FD241943100062DC13 /* RequestModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestModels;
+			sourceTree = "<group>";
+		};
+		D62AA4002419439B0062DC13 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				D62AA401241943A40062DC13 /* ApiConfig.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		D62AA4052419501C0062DC13 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D62AA4062419502C0062DC13 /* PostService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D62AA4082419524F0062DC13 /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				D62AA4092419526C0062DC13 /* PostListViewController.swift */,
+				D62AA40A2419526C0062DC13 /* PostListViewController.xib */,
+				D62AA40D241952910062DC13 /* PostListVM.swift */,
+				D62AA40F241954B50062DC13 /* PostCell.swift */,
+				D62AA410241954B50062DC13 /* PostCell.xib */,
+			);
+			path = Post;
 			sourceTree = "<group>";
 		};
 		D6B7DEF724159D9D0050D670 = {
@@ -192,6 +291,8 @@
 		D6B7DF0224159D9D0050D670 /* Zadatak */ = {
 			isa = PBXGroup;
 			children = (
+				D62AA4002419439B0062DC13 /* Config */,
+				D62AA3F5241942B40062DC13 /* Networking */,
 				D62AA3D72416A3680062DC13 /* Common */,
 				D62AA3D62416A3680062DC13 /* Coordinator */,
 				D62AA3F22416B4630062DC13 /* DI */,
@@ -264,7 +365,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D62AA3E62416A8330062DC13 /* TabbarViewController.xib in Resources */,
+				D62AA412241954B50062DC13 /* PostCell.xib in Resources */,
 				D62AA3D42416A2A20062DC13 /* Main.storyboard in Resources */,
+				D62AA40C2419526C0062DC13 /* PostListViewController.xib in Resources */,
 				D62AA3D22416A2A20062DC13 /* Assets.xcassets in Resources */,
 				D62AA3D32416A2A20062DC13 /* LaunchScreen.storyboard in Resources */,
 			);
@@ -319,17 +422,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62AA40424194B600062DC13 /* ResponseStatus.swift in Sources */,
 				D62AA3E52416A8330062DC13 /* TabbarViewController.swift in Sources */,
 				D62AA3E12416A79C0062DC13 /* SceneTransition.swift in Sources */,
 				D62AA3E82416A83E0062DC13 /* TabbarVM.swift in Sources */,
 				D62AA3F12416AF110062DC13 /* SceneCoordinator.swift in Sources */,
+				D62AA41A24195EF70062DC13 /* UITableView+Ext.swift in Sources */,
+				D62AA414241954DA0062DC13 /* UITableViewCell+Ext.swift in Sources */,
 				D62AA3F42416B46E0062DC13 /* InstanceRegistration.swift in Sources */,
+				D62AA3F9241942DA0062DC13 /* Network.swift in Sources */,
 				D62AA3DB2416A38E0062DC13 /* ViewModelType.swift in Sources */,
+				D62AA402241943A40062DC13 /* ApiConfig.swift in Sources */,
+				D62AA418241955DE0062DC13 /* Configurable.swift in Sources */,
+				D62AA3FF2419431E0062DC13 /* ApiEndpoint.swift in Sources */,
+				D62AA3F7241942C70062DC13 /* NetworkService.swift in Sources */,
+				D62AA416241955320062DC13 /* Reusable.swift in Sources */,
+				D62AA40E241952910062DC13 /* PostListVM.swift in Sources */,
 				D62AA3DD2416A3D00062DC13 /* MVVMViewController.swift in Sources */,
 				D62AA3DF2416A78E0062DC13 /* Scene.swift in Sources */,
 				D6B7DF0624159D9D0050D670 /* ViewController.swift in Sources */,
+				D62AA4072419502C0062DC13 /* PostService.swift in Sources */,
 				D62AA3EF2416AC580062DC13 /* SceneCoordinatorType.swift in Sources */,
+				D62AA40B2419526C0062DC13 /* PostListViewController.swift in Sources */,
 				D6B7DF0424159D9D0050D670 /* AppDelegate.swift in Sources */,
+				D62AA411241954B50062DC13 /* PostCell.swift in Sources */,
 				D62AA3EA2416A97C0062DC13 /* Injectable.swift in Sources */,
 				D6B7DF0C24159D9D0050D670 /* Zadatak.xcdatamodeld in Sources */,
 			);

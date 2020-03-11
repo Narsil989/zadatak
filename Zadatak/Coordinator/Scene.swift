@@ -9,6 +9,7 @@ import UIKit
 
 enum Scene {
     case tabbar
+    case posts
 }
 
 extension Scene {
@@ -16,6 +17,9 @@ extension Scene {
         switch self {
         case .tabbar:
             let controller = FactoryContainer.instance.resolve(TabbarViewController.self)!
+            return controller
+        case .posts:
+            let controller = FactoryContainer.instance.resolve(PostListViewController.self)!
             return controller
         }
     }

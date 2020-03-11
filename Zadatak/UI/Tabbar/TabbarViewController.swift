@@ -24,6 +24,7 @@ class TabbarViewController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.viewControllers = [Scene.posts.viewController]
     }
 
 }

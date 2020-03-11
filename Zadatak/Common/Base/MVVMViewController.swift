@@ -23,6 +23,7 @@ class MVVMViewController<T: ViewModelType>: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bindOuput(viewModel.transform(input: bindInput()))
     }
     
     func bindInput() -> T.Input {
