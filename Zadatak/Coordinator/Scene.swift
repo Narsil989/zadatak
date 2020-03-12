@@ -10,6 +10,7 @@ import UIKit
 enum Scene {
     case tabbar
     case posts
+    case postDetails(_ id: Int)
 }
 
 extension Scene {
@@ -17,10 +18,15 @@ extension Scene {
         switch self {
         case .tabbar:
             let controller = FactoryContainer.instance.resolve(TabbarViewController.self)!
-            return controller
+            return UINavigationController(rootViewController: controller)
         case .posts:
             let controller = FactoryContainer.instance.resolve(PostListViewController.self)!
             return controller
+        case let .postDetails(id):
+            let controller = FactoryContainer.instance.resolve(PostDetailsViewController.self)!
+            controller.postId = id
+            return controller
+            
         }
     }
 }

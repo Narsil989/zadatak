@@ -9,6 +9,7 @@ import Moya
 
 enum ApiEndpoint {
     case posts
+    case post(id: Int)
 }
 
 extension ApiEndpoint: TargetType, AccessTokenAuthorizable {
@@ -23,12 +24,14 @@ extension ApiEndpoint: TargetType, AccessTokenAuthorizable {
         switch self {
         case .posts:
             return "api/posts"
+        case let .post(id):
+            return "api/posts/\(id)"
         }
     }
     
     var method: Method {
         switch self {
-        case .posts:
+        case .posts, .post:
             return .get
         }
     }
@@ -50,7 +53,7 @@ extension ApiEndpoint: TargetType, AccessTokenAuthorizable {
     
     var task: Task {
         switch self {
-        case .posts:
+        case .posts, .post:
             return .requestPlain
         }
     }

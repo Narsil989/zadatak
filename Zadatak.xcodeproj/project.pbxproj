@@ -37,6 +37,10 @@
 		D62AA416241955320062DC13 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA415241955320062DC13 /* Reusable.swift */; };
 		D62AA418241955DE0062DC13 /* Configurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA417241955DE0062DC13 /* Configurable.swift */; };
 		D62AA41A24195EF70062DC13 /* UITableView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA41924195EF70062DC13 /* UITableView+Ext.swift */; };
+		D62AA41D241AA19A0062DC13 /* PostDetailsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA41C241AA19A0062DC13 /* PostDetailsVM.swift */; };
+		D62AA420241AA1CE0062DC13 /* PostDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA41E241AA1CE0062DC13 /* PostDetailsViewController.swift */; };
+		D62AA421241AA1CE0062DC13 /* PostDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D62AA41F241AA1CE0062DC13 /* PostDetailsViewController.xib */; };
+		D62AA423241AB2BF0062DC13 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = D62AA422241AB2BF0062DC13 /* UIViewController+Ext.swift */; };
 		D6B7DF0424159D9D0050D670 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7DF0324159D9D0050D670 /* AppDelegate.swift */; };
 		D6B7DF0624159D9D0050D670 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6B7DF0524159D9D0050D670 /* ViewController.swift */; };
 		D6B7DF0C24159D9D0050D670 /* Zadatak.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D6B7DF0A24159D9D0050D670 /* Zadatak.xcdatamodeld */; };
@@ -75,6 +79,10 @@
 		D62AA415241955320062DC13 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		D62AA417241955DE0062DC13 /* Configurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configurable.swift; sourceTree = "<group>"; };
 		D62AA41924195EF70062DC13 /* UITableView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Ext.swift"; sourceTree = "<group>"; };
+		D62AA41C241AA19A0062DC13 /* PostDetailsVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsVM.swift; sourceTree = "<group>"; };
+		D62AA41E241AA1CE0062DC13 /* PostDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsViewController.swift; sourceTree = "<group>"; };
+		D62AA41F241AA1CE0062DC13 /* PostDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostDetailsViewController.xib; sourceTree = "<group>"; };
+		D62AA422241AB2BF0062DC13 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		D6B7DF0024159D9D0050D670 /* Zadatak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zadatak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6B7DF0324159D9D0050D670 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6B7DF0524159D9D0050D670 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -187,6 +195,7 @@
 			children = (
 				D62AA413241954DA0062DC13 /* UITableViewCell+Ext.swift */,
 				D62AA41924195EF70062DC13 /* UITableView+Ext.swift */,
+				D62AA422241AB2BF0062DC13 /* UIViewController+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -261,6 +270,7 @@
 		D62AA4082419524F0062DC13 /* Post */ = {
 			isa = PBXGroup;
 			children = (
+				D62AA41B241AA1840062DC13 /* Details */,
 				D62AA4092419526C0062DC13 /* PostListViewController.swift */,
 				D62AA40A2419526C0062DC13 /* PostListViewController.xib */,
 				D62AA40D241952910062DC13 /* PostListVM.swift */,
@@ -268,6 +278,16 @@
 				D62AA410241954B50062DC13 /* PostCell.xib */,
 			);
 			path = Post;
+			sourceTree = "<group>";
+		};
+		D62AA41B241AA1840062DC13 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				D62AA41C241AA19A0062DC13 /* PostDetailsVM.swift */,
+				D62AA41E241AA1CE0062DC13 /* PostDetailsViewController.swift */,
+				D62AA41F241AA1CE0062DC13 /* PostDetailsViewController.xib */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		D6B7DEF724159D9D0050D670 = {
@@ -364,6 +384,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D62AA421241AA1CE0062DC13 /* PostDetailsViewController.xib in Resources */,
 				D62AA3E62416A8330062DC13 /* TabbarViewController.xib in Resources */,
 				D62AA412241954B50062DC13 /* PostCell.xib in Resources */,
 				D62AA3D42416A2A20062DC13 /* Main.storyboard in Resources */,
@@ -425,11 +446,13 @@
 				D62AA40424194B600062DC13 /* ResponseStatus.swift in Sources */,
 				D62AA3E52416A8330062DC13 /* TabbarViewController.swift in Sources */,
 				D62AA3E12416A79C0062DC13 /* SceneTransition.swift in Sources */,
+				D62AA41D241AA19A0062DC13 /* PostDetailsVM.swift in Sources */,
 				D62AA3E82416A83E0062DC13 /* TabbarVM.swift in Sources */,
 				D62AA3F12416AF110062DC13 /* SceneCoordinator.swift in Sources */,
 				D62AA41A24195EF70062DC13 /* UITableView+Ext.swift in Sources */,
 				D62AA414241954DA0062DC13 /* UITableViewCell+Ext.swift in Sources */,
 				D62AA3F42416B46E0062DC13 /* InstanceRegistration.swift in Sources */,
+				D62AA420241AA1CE0062DC13 /* PostDetailsViewController.swift in Sources */,
 				D62AA3F9241942DA0062DC13 /* Network.swift in Sources */,
 				D62AA3DB2416A38E0062DC13 /* ViewModelType.swift in Sources */,
 				D62AA402241943A40062DC13 /* ApiConfig.swift in Sources */,
@@ -447,6 +470,7 @@
 				D6B7DF0424159D9D0050D670 /* AppDelegate.swift in Sources */,
 				D62AA411241954B50062DC13 /* PostCell.swift in Sources */,
 				D62AA3EA2416A97C0062DC13 /* Injectable.swift in Sources */,
+				D62AA423241AB2BF0062DC13 /* UIViewController+Ext.swift in Sources */,
 				D6B7DF0C24159D9D0050D670 /* Zadatak.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

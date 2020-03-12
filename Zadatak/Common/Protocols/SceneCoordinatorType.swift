@@ -17,6 +17,8 @@ protocol SceneCoordinatorType {
     
     func pop(_ toRoot: Bool, animated: Bool, completion: VoidCompletion)
     
+    func push(animated: Bool, completion: VoidCompletion)
+    
 }
 
 extension SceneCoordinatorType {
@@ -29,4 +31,8 @@ extension SceneCoordinatorType {
         pop(toRoot, animated: animated, completion: completion)
     }
     
+    
+    func push(animated: Bool, completion: VoidCompletion) {
+        push(animated: animated, completion: completion)
+    }
 }
